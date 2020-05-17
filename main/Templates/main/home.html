@@ -1,9 +1,6 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->    
+<html>
  
 <head>
 
@@ -16,27 +13,71 @@
 
 <style>
 
+* {
+  box-sizing: border-box;
+  background-color: rgb(155, 220, 180);
+}
+
 .header-main {
+  margin: 20px;
   font-family: "Lucida Console", Courier, monospace;
+  font-size: 24px;
+}
+
+.header-main > h3 {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 18px;
+  border: 10px yellow;
 
 }
 
-.flex-container {
+.main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 3px solid red;
+  background-color: rgb(196, 248, 255);
+}
+
+.menu {
   display: flex;
-  align-items: stretch;
-  background-color: #f1f1f1;
+  flex-direction: column;
+  width: 25%;
+  float: left;
+  padding: 15px;
+  margin: 10px white;
+  border: 10px solid mediumseagreen;
+  background-color:  #f1f1f1;
+}
+
+.menu > div {
+  background-color: blueviolet;
+  width: 100px;
+  margin: 15px blueviolet;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
   font-family: "Lucida Console", Courier, monospace;
 }
 
-.flex-container > div {
-  background-color: DodgerBlue;
-  color: white;
-  margin: 10px;
+
+.category {
+  background-color: blueviolet;
+  width: 100px;
+  margin: 20px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
   font-family: "Lucida Console", Courier, monospace;
+
 }
+
+.category > div {
+  text-align: center;
+  font-family: "Lucida Console", Courier, monospace;
+  border: 15px white;
+}
+
 </style>
 </head>
 
@@ -44,13 +85,27 @@
 <body>
 
 <div class="header-main">
-  <h1>SURREAL NEWS</h1>
+  <h1>AUTOMATIC NEWS</h1>
   <h3>News you wouldn't think happened ... until it did.</h3>
 </div>
 <br></br>
-<div class="flex-container">
-  <div style="flex-grow: 1">1</div>
-  <div style="flex-grow: 3">3</div>
+
+<div class="menu">
+  <div class="category">
+
+    <h3>Highlights</h3>
+  </div>
+  <div class="category">
+    <h3>Transportation</h3>
+  </div>
+  <div class="category">
+    <h3>Technology</h3>
+  </div>
+  
+</div>
+
+<div class="main">
+
 </div>
 
 </body>
