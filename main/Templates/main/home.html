@@ -18,6 +18,7 @@
 * {
   box-sizing: border-box;
   /*background-color: rgb(91, 155, 81);*/
+  margin: 10px;
   background-color: rgb(255, 255, 255);
 
 }
@@ -31,7 +32,7 @@
 .header-main > h1 {
   background-color: rgb(255, 255, 255);
   font-family: "Consolas";
-  font-size: 40px;
+  font-size: 45px;
   padding: 10px;
   color: red;
   border-left: 8px solid black;
@@ -42,17 +43,17 @@
   font-family: "Armata";
   font-size: 14px;
   color: blue;
-  padding: 5px;
+  padding: 8px;
   margin-top: -20px;
   margin-left: 40px;
   border-left: 6px solid black;
 }
 
 .main {
-  width: 75%;
+  width: 65%;
   float: left;
   padding: 35px;
-  border: 10px solid rgb(255, 255, 255);
+  border: 4px solid rgb(255, 255, 255);
   /*background-color: rgb(60, 100, 80);*/
   background-color: rgb(255, 255, 255);
 }
@@ -70,37 +71,40 @@
     'menu main main main right right'
     'menu footer footer footer footer footer';
   grid-gap: 10px;
-  background-color: black;
+  background-color: greenyellow;
   padding: 20px;
 }
 
 .grid-container > div {
-  background-color: lightskyblue;
+  background-color: greenyellow;
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 20px;
+  border-left: 10px solid black;
   font-size: 30px;
+  font-family: "Armata";
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 20%;
   float: left;
-  padding: 5px;
-  border: 20px solid black;
+  padding: 20px;
+  border-left: 15px solid black;
   background-color: rgb(255, 255, 255);
 }
 
 .menu > div {
   background-color: rgb(255, 255, 255);
-  width: 40px;
+  width: inherit;
   text-align: center;
-  line-height: 1px;
-  font-size: 20px;
-  padding: 5px;
+  line-height: 5px;
+  font-size: 18px;
+  padding: 2px;
+  margin: 10px;
   font-family: "Armata";
-  color: black;
-  border-left: 6px solid blueviolet;
+  color: blueviolet;
+  border-left: 6px solid black;
 }
 
 
@@ -113,7 +117,7 @@
 
 .category > div {
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   font-family: "Armata";
 }
 
@@ -144,11 +148,21 @@
 
 <div class="main">
   <div class="grid-container">
-    <div class="item1">Article 1</div>
-    <div class="item2">Article 2</div>
-    <div class="item3">Article 3</div>  
-    <div class="item4">Article 4</div>
-    <div class="item5">Article 5</div>
+    <div class="item1">
+      <h4> Wired: Carbon Dioxide Emissions Have Dropped 17 Percent During the Pandemic</h4>
+    </div>
+    <div class="item2">
+      <h5> Article 1</h5>
+    </div>
+    <div class="item3">
+      <h5> Article 1</h5>
+    </div>  
+    <div class="item4">
+      <h5> Article 1</h5>
+    </div>
+    <div class="item5">
+      <h5> Article 1</h5>
+    </div>
   </div>
  
 </div>
